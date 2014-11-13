@@ -5,6 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {}
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -39,19 +42,16 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     
+        <br />
+    
     </div>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="Sql_DataSource_HW6_ctavarez">
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/New Recipe.aspx">Add a New Recipe</asp:HyperLink>
+        <br />
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CssClass="auto-style1" DataKeyNames="recipeID" DataSourceID="Sql_DataSource_HW6_ctavarez" Width="545px">
             <Columns>
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="recipe_name" HeaderText="Recipe Name" SortExpression="recipe_name" />
-                <asp:BoundField DataField="ingridient_1" HeaderText="Ingridient 1" SortExpression="ingridient_1" />
-                <asp:BoundField DataField="ingridient_2" HeaderText="Ingridient 2" SortExpression="ingridient_2" />
-                <asp:BoundField DataField="ingridient_3" HeaderText="Ingridient 3" SortExpression="ingridient_3" />
-                <asp:BoundField DataField="ingridient_4" HeaderText="Ingridient 4" SortExpression="ingridient_4" />
-                <asp:BoundField DataField="ingridient_5" HeaderText="Ingridient 5" SortExpression="ingridient_5" />
-                <asp:BoundField DataField="preparation" HeaderText="Preparation" SortExpression="preparation" />
                 <asp:BoundField DataField="submitted_by" HeaderText="Submitted By" SortExpression="submitted_by" />
-                <asp:BoundField DataField="additional_notes" HeaderText="Additional Notes" SortExpression="additional_notes" />
+                <asp:HyperLinkField DataNavigateUrlFields="recipeID" DataNavigateUrlFormatString="DetailView.aspx?recipeID={0}" Text="View" />
             </Columns>
         </asp:GridView>
     </form>

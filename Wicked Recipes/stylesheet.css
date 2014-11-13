@@ -1,2 +1,5 @@
 ﻿body {
 }
+
+.deletedRecipe{color:red; font-style:italic;
+}
