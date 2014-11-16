@@ -6,11 +6,21 @@ body {
     background-color:#D2B48C;
     text-align: center;
     align-content:center;
-    
+    font-family:Georgia;
+}
+body li {
+        display: inline;
+        list-style-type: none;
+        padding-right: 20px; font-size: 14pt;
+        font-weight:normal;
+        font-variant:small-caps;
+}
+body a {
+       text-decoration:underline;
+       font-weight: bold;
 }
 .navigation{
            text-align: center;
-            
 }
 .title{
       font-family:Georgia;
@@ -60,7 +70,7 @@ body {
 }
  
 .gridView th {
-            :padding:7px;
+             padding:7px;
              color:white;
              background:#F08080;
              font-size:16px;
@@ -119,7 +129,16 @@ body {
 
 /* About Us Page Formatting */
 
-
+.aboutUs {
+         text-align:justify;
+         font-family:Georgia;
+         font-size:12px;
+         border: 1px solid #D2B48C;
+         align-content: center;
+         margin-left: 220pt; 
+         margin-right: 220pt;
+         
+}
 
 /* Footer */
 .footer{

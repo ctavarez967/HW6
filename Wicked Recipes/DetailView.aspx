@@ -13,11 +13,12 @@
     <div class="tittle">
         <h1>Wicked Easy Recipes</h1>
     </div>
-        <h3 class="navigation"><a href="Default.aspx"style="color:black">Home</a>&nbsp;
-             |&nbsp;<a href="New Recipe.aspx"style="color:black">New Recipe</a>&nbsp;
-             |&nbsp; <a href="About Us.aspx"style="color:black">About Us</a>&nbsp; 
-             |&nbsp; <a href="Contact.aspx"style="color:black">Contact</a></h3>
-
+        <ul>
+             <li><a href="Default.aspx"style="color:black">Home</a>&nbsp;&nbsp; |</li>
+             <li><a href="New Recipe.aspx"style="color:black">New Recipe</a>&nbsp;&nbsp; |</li>
+             <li><a href="About Us.aspx"style="color:black">About Us</a>&nbsp;&nbsp; |</li>
+             <li><a href="Contact.aspx"style="color:black">Contact</a></li>
+            </ul>
         <asp:SqlDataSource ID="SqlDataSource_HW6_detail_view" runat="server" ConnectionString="<%$ ConnectionStrings:db_ctavarez_HW6 %>" DeleteCommand="DELETE FROM [ctavarez_HW6] WHERE [recipeID] = @recipeID" InsertCommand="INSERT INTO [ctavarez_HW6] ([recipe_name], [ingridient_1], [ingridient_2], [ingridient_3], [ingridient_4], [ingridient_5], [preparation], [submitted_by], [additional_notes]) VALUES (@recipe_name, @ingridient_1, @ingridient_2, @ingridient_3, @ingridient_4, @ingridient_5, @preparation, @submitted_by, @additional_notes)" SelectCommand="SELECT * FROM [ctavarez_HW6] WHERE ([recipeID] = @recipeID)" UpdateCommand="UPDATE [ctavarez_HW6] SET [recipe_name] = @recipe_name, [ingridient_1] = @ingridient_1, [ingridient_2] = @ingridient_2, [ingridient_3] = @ingridient_3, [ingridient_4] = @ingridient_4, [ingridient_5] = @ingridient_5, [preparation] = @preparation, [submitted_by] = @submitted_by, [additional_notes] = @additional_notes WHERE [recipeID] = @recipeID">
             <DeleteParameters>
                 <asp:Parameter Name="recipeID" Type="Int32" />
