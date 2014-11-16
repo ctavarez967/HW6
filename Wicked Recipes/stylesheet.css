@@ -1,5 +1,130 @@
-﻿body {
+﻿
+
+/* Site-Wide Formatting */
+
+body {
+    background-color:#D2B48C;
+    text-align: center;
+    align-content:center;
+    
+}
+.navigation{
+           text-align: center;
+            
+}
+.title{
+      font-family:Georgia;
+      text-align: center;   
+      margin-left:auto; 
+      margin-right:auto;
+}
+.content{
+        align-content:center;
+        margin-left:auto; 
+        margin-right:auto;
 }
 
-.deletedRecipe{color:red; font-style:italic;
+/* Validation and Messages */
+
+.deletedRecipe{
+              color:red;
+              font-style:italic;
+              font-size:20px;
+              font-family:Georgia; 
 }
+.Val{
+    color:red;
+    font-family:Georgia;
+    text-align:left;
+}
+
+/* Home Page Table */
+
+.gridView {
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Georgia;
+            margin-left:auto;
+            margin-right:auto; 
+            border: 2px solid;
+            border-color:#F08080
+} 
+ 
+.gridView td {
+             padding:7px;
+             border:solid 1px #F08080;
+             color:black;
+             background:#FFFF99;
+             font-size:14px;
+             border:solid 1px #F08080;
+}
+ 
+.gridView th {
+            :padding:7px;
+             color:white;
+             background:#F08080;
+             font-size:16px;
+             border:solid 1px #F08080
+}
+
+/* Detail View Page Table */
+
+.table2 {
+       align-content:center;
+       margin-left: 362pt; 
+       margin-right: auto;
+}
+.leftColumn2{
+           height:25px;width:130px;
+           background-color:#ffff99;
+           text-align:right;
+           font-size:14px;
+           font-family:Georgia;
+           border:solid 2px #f08080; 
+}
+.rightColumn2{
+           height:25px;width:130px;
+           background-color:#f08080;
+           text-align:left;
+           font-size:14px;
+           font-family:Georgia;
+}
+
+/* New Recipe Page Table */
+
+.table3 {
+       align-content:center;
+       margin-left: 362pt; 
+       margin-right: auto;
+}
+.leftColumn3{
+           height:25px;width:130px;
+           background-color:#ffff99;
+           text-align:right;
+           font-size:14px;
+           font-family:Georgia;
+           border:solid 2px #f08080; 
+}
+.rightColumn3{
+           height:25px;width:130px;
+           background-color:#f08080;
+           text-align:left;
+           font-size:14px;
+           font-family:Georgia;
+}
+
+/* Contact Page Formatting */
+
+
+
+/* About Us Page Formatting */
+
+
+
+/* Footer */
+.footer{
+       font-family:Georgia;
+       text-align:center;
+       font-size:10px    
+}
+      
